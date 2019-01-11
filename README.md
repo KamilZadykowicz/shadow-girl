@@ -1,2 +1,2 @@
 # shadow-girl
-You can change shodow of woman by moving the sun on sides
+You can change shadow of woman by moving the sun on sides
