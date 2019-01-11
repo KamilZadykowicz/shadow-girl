@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shadow</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="slidecontainer">
+        <input type="range" min="-90" max="90" value="5" class="slider" id="myRange">
+    </div>
+    <p id="demo"></p>
+    <div class="box">
+        <img id="shadow" class="img-shadow" src="shadow.png" alt="">
+        <img class="img-main" src="girl.png" alt="">
+    </div>
+<!-- <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script> -->
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        // output.innerHTML = this.value;
+        var angle = this.value;
+        // $('#shadow').css
+        document.getElementById("shadow").style.cssText = "transform: rotate("+-angle+"deg)";
+    }
+</script>
+</body>
+</html>
